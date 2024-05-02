@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Find A Movie - Testing</title>
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    </head>
+
+    <body>
+
+        <div class="container">
+            <div class="row col-md-6 col-md-offset-3">
+                <div class="panel panel-primary">
+                    <div class="panel-heading text-center">
+                        <h1>Find a Movie - Testing</h1>
+                    </div>
+                    <div class="panel-body">
+                        <!-- link to the "connect.php"-->
+                        <!-- method="post" represents that PHP uses it to collect data -->
+                        <!-- $_POST is a PHP super global variable which is used to collect data after submitting an HTML form-->
+                        <form action="connect.php" method="post">
+
+                            <div class="form-group">
+                                <label>Movie Rating</label>
+                                <select name="searched_movieRating" class="form-control">
+                                    <option value="noPref">*No Preference*</option>
+                                    <option value="G">G</option>
+                                    <option value="PG">PG</option>
+                                    <option value="PG-13">PG-13</option>
+                                    <option value="R">R</option>
+                                </select>
+                            </div>
+
+                            <div class="form-group">
+                                <label>Genre</label>
+                                <select name="searched_movieGenre" class="form-control">
+                                    <option value="noPref">*No Preference*</option>
+                                    <option value="Action">Action</option>
+                                    <option value="Animation">Animation</option>
+                                    <option value="Comedy">Comedy</option>
+                                    <option value="Drama">Drama</option>
+                                    <option value="Fantasy">Fantasy</option>
+                                    <option value="Romance">Romance</option>
+                                </select>
+                            </div>
+
+                            <input type="submit" class="btn btn-primary" />
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
