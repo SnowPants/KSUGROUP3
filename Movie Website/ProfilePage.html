@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .profile-item {
+            margin-bottom: 10px;
+        }
+        label {
+            font-weight: bold;
+        }
+        input[type="text"], input[type="email"], input[type="password"], input[type="date"] {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="password"] {
+            font-family: 'Courier New', Courier, monospace;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        @media only screen and (max-width: 600px) {
+            body {
+                background-color: blue; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>User Profile</h2>
+        <form id="profileForm">
+            <div class="profile-item">
+                <label for="userId">User ID:</label>
+                <input type="text" id="userId" name="userId" >
+            </div>
+            <div class="profile-item">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" >
+            </div>
+            <div class="profile-item">
+                <label for="email">User Email:</label>
+                <input type="email" id="email" name="email" >
+            </div>
+            <div class="profile-item">
+                <label for="password">User Password:</label>
+                <input type="password" id="password" name="password" >
+                <button type="button" onclick="togglePassword()">Show/Hide Password</button>
+            </div>
+            <div class="profile-item">
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob" >
+            </div>
+            <div class="profile-item">
+                <label for="genre">Genre Preference:</label>
+                <input type="text" id="genre" name="genre" >
+            </div>
+        </form>
+    </div>
+
+    <script>
+        function togglePassword() {
+            var passwordInput = document.getElementById("password");
+            if (passwordInput.type === "password") {
+                passwordInput.type = "text";
+                passwordInput.value = "";
+            } else {
+                passwordInput.type = "password";
+                passwordInput.value = "******"; 
+        }
+    </script>
+</body>
+</html>
