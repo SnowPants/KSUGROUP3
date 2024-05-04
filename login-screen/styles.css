@@ -4,111 +4,106 @@ body, html {
     height: 100%;
     overflow-x: hidden;
     font-family: "Eras Medium ITC", Arial, sans-serif; /* Fallback to Arial if Eras Medium ITC is not available */
-    background-color: #492388;
+    background-color: #000; /* Dark background color resembling a theater */
+}
 
-  }
-
-  .carousel {
-    /* Add your carousel styles here */
+.carousel {
     width: 100%;
     height: 100%;
     background-image: url('/images/flik-pik_background');
     background-size: cover;
     background-position: center;
     position: relative;
-  }
-  
-  .get-started {
+}
+
+.get-started {
     position: absolute;
     bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
     padding: 10px 20px;
-    background-color: #007bff; /* Change the color as needed */
+    background-color: #f44336; /* Red color for the "Get Started" button */
     color: #fff;
     border: none;
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
-    text-decoration: none; /* Remove underline from the anchor */
+    text-decoration: none;
+}
 
-  }
-  
-  .log-in {
+.log-in {
     position: absolute;
     top: 20px;
     right: 20px;
     padding: 10px 20px;
-    background-color: #f4eff1; 
-    color: #4c48b1;
+    background-color: #ffeb3b; /* Yellow color for the "Log In" button */
+    color: #000;
     border: none;
     border-radius: 5px;
     font-size: 16px;
     cursor: pointer;
-  }
-  
-  .btn-register {
-    background-color: #3527ce;
-    color: white;
+}
+
+.btn-register {
+    background-color: #f44336; /* Red color for the register button */
+    color: #fff;
     border: none;
-    border-radius: 20px; /* roundness of the buttons */
-    text-align: center; /* Center the text within the button */
-    display: block; /* Make the button a block-level element */
-    margin: 0 auto; /* Center the button horizontally */
+    border-radius: 20px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
     margin-top: 20px;
     width: 200px;
     padding: 15px;
-    text-decoration: none; /* Remove underline from the anchor */
-
+    text-decoration: none;
 }
 
 .btn-register:hover,
 .btn-register:active {
-    background-color: #7472cE;
+    background-color: #c62828; /* Darker red color on hover/active state */
 }
 
+.btn-login {
+    background-color: #ffeb3b; /* Yellow color for the login button */
+    color: #000;
+    border: none;
+    border-radius: 20px;
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    margin-top: 10px;
+    width: 200px;
+    padding: 10px;
+    text-decoration: none;
+}
 
-    .btn-login {
-        background-color: #5850b9;
-        color: white;
-        border: none;
-        border-radius: 20px; /* Adjust the value to change the roundness of the buttons */
-        text-align: center; /* Center the text within the button */
-        display: block; /* Make the button a block-level element */
-        margin: 0 auto; /* Center the button horizontally */
-        margin-top: 10px;
-        width: 200px;
-        padding: 10px;
-        text-decoration: none; /* Remove underline from the anchor */
-    }
-    
 .btn-login:hover,
-.btn-loginy:active {
-    background-color: #7472cE;
+.btn-login:active {
+    background-color: #c6ff00; /* Light green color on hover/active state */
 }
 
 .form-control {
-    border-color: #5850b9;
-    border-radius: 26px; /* Adjust the value to change the roundness of the input boxes */
-    padding: 16px; /* Add padding to the input boxes */
-    box-sizing: border-box; /* Include padding and border in the element's total width and height */
-    width: 100%; /* Ensure the input boxes fill the container width */
+    border-color: #ffeb3b; /* Yellow border color for input boxes */
+    border-radius: 26px;
+    padding: 16px;
+    box-sizing: border-box;
+    width: 100%;
 }
 
 .form-label {
-    color: #5850b9;
+    color: #ffeb3b; /* Yellow color for form labels */
     line-height: 2;
     padding-left: 10px;
 }
 
 .register {
-    color: #4035bb;
+    color: #ffeb3b; /* Yellow color for register link */
 }
 
 .mb-3 {
     padding: 15px;
     border-radius: 4px;
-    background: #ffbb5e;
+    background: #f44336; /* Red background color for form container */
     margin: 10px;
     padding-bottom: 10%;
 }
@@ -116,29 +111,98 @@ body, html {
 .login-already-account {
     text-align: center;
     margin-top: 10%;
-    color:darkmagenta;
+    color: #ffeb3b; /* Yellow color for text */
     font-size: 12px;
 }
 
 .h1 {
     text-align: center;
     margin-top: -2%;
-    color:#ffbb5e;
-    size: 20px;
-}
-.header-logo img{
-    position: sticky; /* Position the logo fixed to the viewport */
-    bottom: 4px; /* Position the logo 40px from the bottom */
-    left: 50%; /* Align the logo horizontally to the center */
-    transform: translateX(-50%); /* Adjust for center alignment */
-    text-align: center; /* Center the logo horizontally */
-    padding-top: 10%;
-    width:53%;
-    height:11%;
-   
+    color: #ffeb3b; /* Yellow color for heading */
+    font-size: 20px;
 }
 
-.errorMsg{
-    font-size:14px;
-    color:red;
+.header-logo img{
+    position: sticky;
+    bottom: 4px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    padding-top: 10%;
+    width: 53%;
+    height: 11%;
 }
+
+.errorMsg {
+    font-size: 14px;
+    color: red;
+}/* mobile menu */
+
+  
+  .topnav {
+    overflow: hidden;
+    background-color: rgb(87, 130, 23);
+    position: relative;
+  }
+  
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  .topnav a {
+    color: rgb(255, 255, 255);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  .topnav a.icon {
+    background: rgb(223, 145, 77);
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .topnav a:hover {
+    background-color: rgb(192, 105, 30);;
+    color: rgb(226, 176, 132);
+  }
+  
+  .active {
+    background-color: #e6a45f;
+    color: rgb(12, 101, 19);
+  }
+
+  .mobile-container {
+    max-width: 480px; /* Adjust as needed for your target devices */
+    height: 100vh;
+    margin: 0 auto;
+    background-color: white;
+    padding: 10px; /* Add some padding for better content spacing */
+  }
+    /* Adjust font sizes for better readability on mobile */
+    h1 {
+      text-align: center;
+      color: #0f832a;
+      font-size: 18px; /* Adjust as needed */
+    }
+  
+    h2 {
+      text-align: center;
+      color: #0f832a;
+      font-size: 16px; /* Adjust as needed */
+    }
+  
+    h3 {
+      text-align: left;
+      color: #0f832a;
+      font-size: 14px; /* Adjust as needed */
+      margin: 10px;
+    }
+  
+    p {
+      font-size: 14px; /* Adjust as needed */
+    }
+
