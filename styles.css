@@ -1,0 +1,249 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+    font-family: "Eras Medium ITC", Arial, sans-serif; /* Fallback to Arial if Eras Medium ITC is not available */
+    background-color: #492388;
+
+  }
+
+  .carousel {
+    /* Add your carousel styles here */
+    width: 100%;
+    height: 100%;
+    background-image: url('/images/flik-pik_background');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  
+  .get-started {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 20px;
+    background-color: #007bff; /* Change the color as needed */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none; /* Remove underline from the anchor */
+
+  }
+  
+  .log-in {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #f4eff1; 
+    color: #4c48b1;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .btn-register {
+    background-color: #3527ce;
+    color: white;
+    border: none;
+    border-radius: 20px; /* roundness of the buttons */
+    text-align: center; /* Center the text within the button */
+    display: block; /* Make the button a block-level element */
+    margin: 0 auto; /* Center the button horizontally */
+    margin-top: 20px;
+    width: 200px;
+    padding: 15px;
+    text-decoration: none; /* Remove underline from the anchor */
+
+}
+
+.btn-register:hover,
+.btn-register:active {
+    background-color: #7472cE;
+}
+
+
+    .btn-login {
+        background-color: #5850b9;
+        color: white;
+        border: none;
+        border-radius: 20px; /* Adjust the value to change the roundness of the buttons */
+        text-align: center; /* Center the text within the button */
+        display: block; /* Make the button a block-level element */
+        margin: 0 auto; /* Center the button horizontally */
+        margin-top: 10px;
+        width: 200px;
+        padding: 10px;
+        text-decoration: none; /* Remove underline from the anchor */
+    }
+    
+.btn-login:hover,
+.btn-loginy:active {
+    background-color: #7472cE;
+}
+
+.form-control {
+    border-color: #5850b9;
+    border-radius: 26px; /* Adjust the value to change the roundness of the input boxes */
+    padding: 16px; /* Add padding to the input boxes */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    width: 100%; /* Ensure the input boxes fill the container width */
+}
+
+.form-label {
+    color: #5850b9;
+    line-height: 2;
+    padding-left: 10px;
+}
+
+.register {
+    color: #4035bb;
+}
+
+.mb-3 {
+    padding: 15px;
+    border-radius: 4px;
+    background: #ffbb5e;
+    margin: 10px;
+    padding-bottom: 10%;
+}
+
+.login-already-account {
+    text-align: center;
+    margin-top: 10%;
+    color:darkmagenta;
+    font-size: 12px;
+}
+
+.h1 {
+    text-align: center;
+    margin-top: -2%;
+    color:#ffbb5e;
+    size: 20px;
+}
+.header-logo img{
+    position: sticky; /* Position the logo fixed to the viewport */
+    bottom: 4px; /* Position the logo 40px from the bottom */
+    left: 50%; /* Align the logo horizontally to the center */
+    transform: translateX(-50%); /* Adjust for center alignment */
+    text-align: center; /* Center the logo horizontally */
+    padding-top: 10%;
+    width:53%;
+    height:11%;
+   
+}
+
+.errorMsg{
+    font-size:14px;
+    color:red;
+}
+
+/* mobile menu */
+
+  
+  .topnav {
+    overflow: hidden;
+    background-color: rgb(87, 130, 23);
+    position: relative;
+  }
+  
+  .topnav #myLinks {
+    display: none;
+  }
+  
+  .topnav a {
+    color: rgb(255, 255, 255);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  
+  .topnav a.icon {
+    background: rgb(223, 145, 77);
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .topnav a:hover {
+    background-color: rgb(192, 105, 30);;
+    color: rgb(226, 176, 132);
+  }
+  
+  .active {
+    background-color: #e6a45f;
+    color: rgb(12, 101, 19);
+  }
+
+  .mobile-container {
+    max-width: 480px; /* Adjust as needed for your target devices */
+    height: 100vh;
+    margin: 0 auto;
+    background-color: white;
+    padding: 10px; /* Add some padding for better content spacing */
+  }
+
+
+  body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+  }
+  .container {
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  .profile-item {
+      margin-bottom: 10px;
+  }
+  label {
+      font-weight: bold;
+  }
+  input[type="text"], input[type="email"], input[type="password"], input[type="date"] {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+  }
+  button {
+      padding: 10px 20px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+  }
+  button:hover {
+      background-color: #0056b3;
+  }
+ 
+  @media screen and (max-width: 600px) {
+      .topnav a:not(:first-child) {display: none;}
+      .topnav a.icon {
+          float: right;
+          display: block;
+      }
+      .topnav.responsive {position: relative;}
+      .topnav.responsive a {
+          float: none;
+          display: block;
+          text-align: left;
+      }
+      .topnav.responsive .icon {
+          position: absolute;
+          right: 0;
+          top: 0;
+      }
+  }
