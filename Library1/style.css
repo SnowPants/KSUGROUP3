@@ -1,0 +1,65 @@
+.topnav {
+    overflow: hidden;
+    background-color: rgb(87, 130, 23);
+    position: relative;
+  }
+  .topnav #myLinks {
+    display: none;
+  }
+  .topnav a {
+    color: rgb(255, 255, 255);
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+  }
+  .topnav a.icon {
+    background: rgb(223, 145, 77);
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav a:hover {
+    background-color: rgb(192, 105, 30);;
+    color: rgb(226, 176, 132);
+  }
+  .active {
+    background-color: #e6a45f;
+    color: rgb(12, 101, 19);
+  }
+ 
+  .mobile-container {
+    max-width: 480px; /* Adjust as needed for your target devices */
+    height: 100vh;
+    margin: 0 auto;
+    background-color: white;
+    padding: 10px; /* Add some padding for better content spacing */
+  }
+
+  .image
+            {
+                width: 23%;
+                padding: 5px;
+                float: left;
+            }
+
+            .library::after
+            {
+                display: table;
+            }
+
+            body
+            {
+                width:auto;
+            }
+
+            @media screen and (max-width: 1200px)
+            {
+                .image
+                {
+                     width: 50%;
+                     height: auto;
+                }
+               
+            }
